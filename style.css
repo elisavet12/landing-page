@@ -1,0 +1,22 @@
+:root {
+  --background-white: hsl(0, 0%, 97%);
+  --black: hsl(246, 22%, 9%);
+  --blue: hsl(234, 91%, 62%);
+  --light-blue: hsl(234, 87%, 73%);
+  --light-grey: hsl(240, 5%, 92%);
+  --grey: hsl(240, 2%, 47%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px auto;
+  place-content: center;
+  min-height: 100vh;
+  font-family: "Inter";
+  font-size: 15px;
+  background-color: var(--background-white);
+  max-width: 1440px;
+}
