@@ -20,3 +20,56 @@ body {
   background-color: var(--background-white);
   max-width: 1440px;
 }
+
+#intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.intro-image {
+  width: 20%;
+}
+
+.details-discuss {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bubble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.discuss-image {
+  width: 20%;
+}
+
+.details-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.work-image {
+  width: 20%;
+}
+
+.align-image {
+  width: 5%;
+}
+
+.customers-image {
+  width: 5%;
+}
+
+.collaborate-image {
+  width: 5%;
+}
+
+.testimonials-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-image {
+  width: 30%;
+}
