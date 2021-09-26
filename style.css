@@ -19,15 +19,112 @@ body {
   font-size: 15px;
   background-color: var(--background-white);
   max-width: 1440px;
+  color: var(--black);
+}
+
+header {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#nav-bar {
+  justify-self: center;
+}
+
+.nav-link {
+  height: 2.5rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  background-color: var(--light-grey);
+  color: var(--blue);
+  border-style: none;
+  cursor: pointer;
 }
 
 #intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0px 150px;
+  margin-bottom: 100px;
+}
+
+.intro-properties {
+}
+
+.intro-info {
+  margin-bottom: 2rem;
+}
+
+.intro-heading {
+  font-size: 3rem;
+  width: 14ch;
+  display: inline-block;
+}
+
+.intro-excerpt {
+  margin: 0px;
+  width: 46ch;
+}
+
+.intro-heading_highlight {
+  color: var(--blue);
+}
+
+.intro-logos {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.intro-logo {
+  width: 70%;
+  max-width: 75px;
+  margin-right: 1rem;
+}
+
+#submit {
+  height: 2.5rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  background-color: var(--light-grey);
+  color: var(--blue);
+  border-style: none;
+  cursor: pointer;
+}
+
+.intro-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  grid-template-areas:
+    "intr-img1 intr-img1"
+    "intr-img2 intr-img3";
+}
+
+.intr-img1 {
+  grid-area: intr-img1;
+  position: relative;
+  left: 30%;
+}
+.intr-img2 {
+  grid-area: intr-img2;
+}
+.intr-img3 {
+  grid-area: intr-img3;
+  position: relative;
+  top: 20%;
+  left: 20%;
 }
 
 .intro-image {
-  width: 20%;
+  max-width: 300px;
+  width: 100%;
 }
 
 .details-discuss {
