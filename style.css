@@ -101,12 +101,15 @@ header {
 
 .intro-images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   grid-template-areas:
     "intr-img1 intr-img1"
-    "intr-img2 intr-img3";
+    "intr-img2 intr-img3"; */
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .intro-image {
@@ -115,18 +118,18 @@ header {
 }
 
 .intr-img1 {
-  grid-area: intr-img1;
-  position: relative;
-  left: 30%;
+  grid-area: ;
+  /* position: relative;
+  left: 30%; */
 }
 .intr-img2 {
-  grid-area: intr-img2;
+  grid-area: ;
 }
 .intr-img3 {
-  grid-area: intr-img3;
-  position: relative;
+  grid-area: ;
+  /* position: relative;
   top: 20%;
-  left: 20%;
+  left: 20%; */
 }
 
 .intro-image {
