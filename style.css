@@ -109,6 +109,11 @@ header {
     "intr-img2 intr-img3";
 }
 
+.intro-image {
+  box-shadow: 5px 10px 18px var(--light-grey);
+  border-radius: 10px;
+}
+
 .intr-img1 {
   grid-area: intr-img1;
   position: relative;
@@ -138,6 +143,11 @@ header {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(5, 1fr);
+}
+
+.discuss-image {
+  box-shadow: 5px 10px 18px var(--light-grey);
+  border-radius: 10px;
 }
 
 .disc-itm1 {
@@ -227,6 +237,7 @@ header {
   max-width: 500px;
   /* position: relative; */
   border-radius: 10px;
+  box-shadow: 5px 10px 18px var(--light-grey);
 }
 
 .bubbles {
@@ -253,6 +264,7 @@ header {
 
 .discuss-image {
   width: 100%;
+  box-shadow: 5px 10px 18px var(--light-grey);
 }
 
 .align-images {
@@ -292,6 +304,7 @@ header {
   max-width: 800px;
   position: relative;
   border-radius: 10px;
+  box-shadow: 5px 10px 18px var(--light-grey);
 }
 
 .cstm-img1 {
@@ -319,6 +332,7 @@ header {
   max-width: 800px;
   position: relative;
   border-radius: 10px;
+  box-shadow: 5px 10px 18px var(--light-grey);
 }
 
 .cllb-img1 {
@@ -346,12 +360,14 @@ header {
 }
 
 .testimonial {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   width: 100%;
   max-width: 22rem;
   padding: 1rem;
   color: var(--grey);
   font-size: 0.7rem;
+  box-shadow: 5px 10px 18px var(--light-grey);
+  border-radius: 10px;
 }
 
 .testimonial-info {
