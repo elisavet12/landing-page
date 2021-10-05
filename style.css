@@ -48,6 +48,10 @@ header {
   border-style: none;
   cursor: pointer;
 }
+.link {
+  text-decoration: none;
+  color: var(--light-blue);
+}
 
 #intro {
   display: grid;
@@ -101,39 +105,28 @@ header {
 
 .intro-images {
   display: grid;
-  /* grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  grid-template-areas:
-    "intr-img1 intr-img1"
-    "intr-img2 intr-img3"; */
-
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
 }
 
 .intro-image {
   box-shadow: 5px 10px 18px var(--light-grey);
   border-radius: 10px;
+  max-width: 200px;
 }
 
 .intr-img1 {
-  grid-area: ;
+  grid-area: 1 / 6 / span 3 / span 3;
   /* position: relative;
   left: 30%; */
 }
 .intr-img2 {
-  grid-area: ;
+  grid-area: 4 / 1 / span 4 / span 4;
+  width: 100%;
 }
 .intr-img3 {
-  grid-area: ;
-  /* position: relative;
-  top: 20%;
-  left: 20%; */
-}
-
-.intro-image {
-  max-width: 300px;
+  grid-area: 5 / 6 / span 3 / span 3;
   width: 100%;
 }
 
@@ -175,7 +168,7 @@ header {
 
 .title {
   font-size: 2rem;
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
   margin: 0px;
   margin-bottom: 1rem;
   width: 24ch;
@@ -183,7 +176,7 @@ header {
 }
 
 .excerpt {
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
   margin: 0px;
   width: 62ch;
 }
@@ -353,6 +346,7 @@ header {
 
 .testimonials {
   padding: 0px 150px;
+  margin-bottom: 100px;
 }
 
 .testimonials-info {
@@ -395,4 +389,18 @@ header {
 .testimonial-logo {
   max-width: 75px;
   width: 20%;
+}
+
+footer {
+  padding: 50px;
+  background-color: var(--light-grey);
+}
+
+.prop1-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.prop2-social {
+  max-width: 40px;
+  width: 100%;
 }
