@@ -404,3 +404,13 @@ footer {
   max-width: 40px;
   width: 100%;
 }
+
+.footer-text {
+  font-size: 15rem;
+  background-image: url(./photos/bubbles.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
