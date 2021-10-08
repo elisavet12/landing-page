@@ -9,6 +9,7 @@
   --light-blue: hsl(234, 87%, 73%);
   --light-grey: hsl(240, 5%, 92%);
   --grey: hsl(240, 2%, 47%);
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -31,10 +32,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: right;
+  position: fixed;
+  width: 100%;
 }
 
 #nav-bar {
-  justify-self: center;
+  justify-self: right;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .nav-link {
@@ -43,10 +49,11 @@ header {
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 10px;
-  background-color: var(--light-grey);
+  background-color: var(--white);
   color: var(--blue);
   border-style: none;
   cursor: pointer;
+  box-shadow: 5px 10px 18px var(--light-grey);
 }
 .link {
   text-decoration: none;
@@ -56,8 +63,8 @@ header {
 #intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0px 150px;
-  margin-bottom: 100px;
+  padding: 200px 200px;
+  margin-bottom: 150px;
   align-items: center;
 }
 
@@ -101,6 +108,7 @@ header {
   color: var(--blue);
   border-style: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .intro-images {
@@ -131,8 +139,12 @@ header {
 }
 
 .details {
-  padding: 0px 150px;
-  margin-bottom: 100px;
+  padding: 0px 200px;
+  margin-bottom: 150px;
+}
+
+.details-discuss {
+  text-align: right;
 }
 
 .discuss-images {
@@ -150,7 +162,7 @@ header {
   grid-area: 1 / 1 / span 2 / span 2;
 
   z-index: 1;
-  bottom: 20%;
+  bottom: 50%;
   right: 15%;
   position: relative;
 }
@@ -158,7 +170,8 @@ header {
 .disc-itm2 {
   display: inline-block;
   margin: 0px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  text-align: left;
 }
 
 .disc-itm3 {
@@ -178,7 +191,7 @@ header {
 .excerpt {
   /* padding: 0px 30px; */
   margin: 0px;
-  width: 62ch;
+  width: 56ch;
 }
 
 .work-images {
@@ -205,12 +218,12 @@ header {
   grid-area: 1 / 1 / span 3 / span 3;
   width: 100%;
   opacity: 0.5;
-  /* bottom: 45%;
-  left: 5%; */
+  position: relative;
+  right: 15%;
 }
 
 .work-itm4 {
-  grid-area: 2 / 2 / span 6 / span 6;
+  grid-area: 2 / 1 / span 6 / span 6;
   max-width: 1200px !important;
   z-index: 1;
 }
@@ -219,10 +232,12 @@ header {
   grid-area: 4 / 1 / span 3 / span 3;
   width: 75%;
   z-index: 1;
+  position: relative;
+  right: 25%;
 }
 
 .work-itm6 {
-  grid-area: 4 / 6 / span 5 / span 5;
+  grid-area: 4 / 5 / span 5 / span 5;
   /* width: 100%;
   bottom: 90%;
   z-index: -1;
@@ -240,8 +255,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 100px;
-  padding: 0px 150px;
-  margin-bottom: 100px;
+  padding: 0px 200px;
+  margin-bottom: 150px;
 }
 
 .bubble {
@@ -345,8 +360,8 @@ header {
 }
 
 .testimonials {
-  padding: 0px 150px;
-  margin-bottom: 100px;
+  padding: 0px 200px;
+  margin-bottom: 150px;
 }
 
 .testimonials-info {
@@ -365,6 +380,9 @@ header {
   font-size: 0.7rem;
   box-shadow: 5px 10px 18px var(--light-grey);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .testimonial-info {
@@ -406,11 +424,14 @@ footer {
 }
 
 .footer-text {
-  font-size: 15rem;
+  font-size: 10rem;
   background-image: url(./photos/bubbles.jpg);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
+  padding: 0px 200px;
+  margin: 0px;
+  text-align: center;
 }
