@@ -43,7 +43,7 @@ header {
   gap: 1rem;
 }
 
-.nav-link {
+.links {
   height: 2.5rem;
   text-align: center;
   padding-left: 2rem;
@@ -56,7 +56,7 @@ header {
   cursor: pointer;
   box-shadow: 5px 10px 18px var(--light-grey);
 }
-.link {
+.nav-link {
   text-decoration: none;
   color: var(--light-blue);
 }
@@ -64,9 +64,14 @@ header {
 #intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 200px 200px;
-  margin-bottom: 150px;
+  /* padding: 200px 200px; */
+  /* margin-bottom: 150px; */
   align-items: center;
+  margin: 50px 150px 100px 150px;
+}
+
+.intro-properties {
+  padding: 50px 50px;
 }
 
 .intro-info {
@@ -117,6 +122,8 @@ header {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, 1fr);
   justify-items: center;
+  padding: 50px 50px;
+  margin: 0px;
 }
 
 .intro-image {
@@ -140,12 +147,14 @@ header {
 }
 
 .details {
-  padding: 0px 200px;
-  margin-bottom: 150px;
+  /* padding: 0px 200px; */
+  margin: 50px 150px 100px 150px;
+  /* margin-bottom: 150px; */
 }
 
 .details-discuss {
   text-align: right;
+  padding: 50px 50px;
 }
 
 .discuss-images {
@@ -224,13 +233,16 @@ header {
 }
 
 .work-itm4 {
-  grid-area: 2 / 1 / span 6 / span 6;
-  max-width: 1200px !important;
+  grid-area: 2 / 3 / span 6 / span 6;
+  max-width: 560px !important;
+  width: 100%;
+  height: 100%;
+  max-height: 315px;
   z-index: 1;
 }
 
 .work-itm5 {
-  grid-area: 4 / 1 / span 3 / span 3;
+  grid-area: 3 / 2 / span 3 / span 3;
   width: 75%;
   z-index: 1;
   position: relative;
@@ -238,9 +250,9 @@ header {
 }
 
 .work-itm6 {
-  grid-area: 4 / 5 / span 5 / span 5;
-  /* width: 100%;
-  bottom: 90%;
+  grid-area: 3 / 6 / span 5 / span 5;
+  width: 100%;
+  /* bottom: 90%;
   z-index: -1;
   right: 10%; */
 }
@@ -445,6 +457,10 @@ footer {
 
   .intro-heading {
     font-size: 2rem;
+  }
+
+  .intro-excerpt {
+    width: 36ch;
   }
 
   .intro-logo {
