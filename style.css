@@ -150,6 +150,7 @@ header {
   /* padding: 0px 200px; */
   margin: 50px 150px 100px 150px;
   /* margin-bottom: 150px; */
+  display: inline-block;
 }
 
 .details-discuss {
@@ -202,6 +203,10 @@ header {
   /* padding: 0px 30px; */
   margin: 0px;
   width: 56ch;
+}
+
+.details-work {
+  padding: 50px 50px;
 }
 
 .work-images {
@@ -268,8 +273,9 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 100px;
-  padding: 0px 200px;
-  margin-bottom: 150px;
+  /* padding: 0px 200px; */
+  /* margin-bottom: 150px; */
+  margin: 50px 150px 100px 150px;
 }
 
 .bubble {
@@ -468,7 +474,32 @@ footer {
   }
 
   .details {
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
+    display: inline-block;
+  }
+
+  .title {
+    width: 12ch;
+  }
+
+  .disc-itm2 {
+    display: block;
+  }
+
+  .discuss-images {
+    margin: 0px;
+  }
+
+  .discuss-image {
+    width: 90%;
+  }
+
+  .disc-itm1 {
+    bottom: 30%;
+  }
+
+  .excerpt {
+    width: 36ch;
   }
 
   .bubbles {
