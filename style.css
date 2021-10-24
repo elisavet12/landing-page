@@ -46,8 +46,8 @@ header {
 .links {
   height: 2.5rem;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 10px;
   background-color: var(--white);
   opacity: 0.9;
@@ -67,7 +67,9 @@ header {
   /* padding: 200px 200px; */
   /* margin-bottom: 150px; */
   align-items: center;
-  margin: 50px 150px 100px 150px;
+  /* margin: 50px 150px 100px 150px; */
+  margin: 50px 0px 100px 0px;
+  padding: 0px 150px 0px 150px;
 }
 
 .intro-properties {
@@ -531,5 +533,22 @@ footer {
 
   .footer-text {
     font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .intro-heading {
+      font-size: 1rem;
+    }
+
+    .intro-excerpt {
+      font-size: 0.5rem;
+    }
+
+    .intro-logos {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
   }
 }
