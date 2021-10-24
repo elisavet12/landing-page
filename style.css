@@ -282,6 +282,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 50px 50px;
 }
 
 .bubble-title {
@@ -379,8 +380,9 @@ header {
 }
 
 .testimonials {
-  padding: 0px 200px;
-  margin-bottom: 150px;
+  /* padding: 0px 200px; */
+  /* margin-bottom: 150px; */
+  margin: 50px 150px 100px 150px;
 }
 
 .testimonials-info {
@@ -388,6 +390,7 @@ header {
   flex-direction: row;
   gap: 1rem;
   justify-content: space-around;
+  padding: 50px 50px;
 }
 
 .testimonial {
@@ -411,6 +414,8 @@ header {
 
 .testimonials-title {
   font-size: 2rem;
+  display: inline-block;
+  padding: 50px 50px;
 }
 
 .testimonial-image {
@@ -450,7 +455,7 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-  padding: 0px 200px;
+  /* padding: 0px 200px; */
   margin: 0px;
   text-align: center;
 }
@@ -503,10 +508,28 @@ footer {
   }
 
   .bubbles {
-    padding: 0px 300px;
+    /* padding: 50px 50px; */
+  }
+
+  .bubble {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .bubble-excerpt {
+    width: 30ch;
   }
 
   .testimonials {
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
+  }
+
+  .testimonials-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-text {
+    font-size: 6rem;
   }
 }
