@@ -468,38 +468,6 @@ footer {
   text-align: center;
 }
 
-.test {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.nav-bar-test {
-  position: relative;
-  display: inline-block;
-}
-
-.elisavet a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.elisavet a:hover {
-  background-color: #ddd;
-}
-
-.dropdown-menu:hover .elisavet {
-  display: block;
-}
-
-.nav-bar-test:hover .test {
-  background-color: #3e8e41;
-}
-
 @media only screen and (max-width: 1000px) {
   #intro {
     /* padding: 200px 300px; */
